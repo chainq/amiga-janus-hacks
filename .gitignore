@@ -1,5 +1,6 @@
 *.ppu
 *.o
 *.s
+*.map
 autoload
 pcwait
