@@ -371,6 +371,7 @@ const
  *}
 
 type
+  PJanusAmiga = ^TJanusAmiga;
   TJanusAmiga = record
     ja_Lock: byte;              {* also used to handshake at 8088 reset *}
     ja_8088Go: byte;            {* unlocked to signal 8088 to init      *}
