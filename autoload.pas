@@ -101,6 +101,7 @@ begin
                                 writeln(dbg,'MATCH FOUND, EXECUTING SERVICE: ',diskobjpath);
                                 Execute('Run <NIL: >NIL: '+diskobjpath+' <NIL: >NIL:',0,TextRec(output).Handle);
                                 do_autoload:=true;
+                                FreeDiskObject(diskobj);
                                 break;
                               end
                             else
@@ -111,6 +112,8 @@ begin
                       end
                     else
                       writeln(dbg,'NOT FOUND');
+
+                    FreeDiskObject(diskobj);
                   end
                 else
                   writeln(dbg,'FAILED!');
