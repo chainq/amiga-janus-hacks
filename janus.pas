@@ -381,15 +381,15 @@ type
     ja_Parameters: RPTR;
     ja_NumInterrupts: Word;
 
-   {* This field is used by janus.library to communicate Amiga states 
-    * to the PC.  The bits of this field may be read by anyone, but 
-    * may be written only by janus.library.  
+   {* This field is used by janus.library to communicate Amiga states
+    * to the PC.  The bits of this field may be read by anyone, but
+    * may be written only by janus.library.
     *}
    ja_AmigaState: Word;
 
-   {* This field is used by the PC to communicate PC states 
-    * to the Amiga.  The bits of this field may be read by anyone, but 
-    * may be written only by the PC operating system.  
+   {* This field is used by the PC to communicate PC states
+    * to the Amiga.  The bits of this field may be read by anyone, but
+    * may be written only by the PC operating system.
     *}
    ja_PCState: Word;
 
